@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World Wide Travelz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: #87ceeb;
+        font-family: "Comic Sans MS", sans-serif;
+      }
+      h1 {
+        text-align: center;
+        color: white;
+        text-shadow: 2px 2px black;
+      }
+      .box {
+        border: 5px ridge gold;
+        background: white;
+        margin: 10px;
+        padding: 10px;
+      }
+      .dest {
+        border: 2px dashed blue;
+        display: inline-block;
+        width: 28%;
+        margin: 1%;
+        vertical-align: top;
+        height: 100px;
+      }
+      button {
+        background: red;
+        color: yellow;
+        font-size: 1.2em;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>✈️ WORLD WIDE TRAVELZ ✈️</h1>
+
+    <div class="box">
+      <h2>Cool Places to Go (Gallery)</h2>
+      
+      <div class="dest">
+        <h3>Paris</h3>
+        <p>See the big tower.</p>
+      </div>
+      <div class="dest">
+        <h3>Hawaii</h3>
+        <p>Very nice beaches.</p>
+      </div>
+      <div class="dest">
+        <h3>Tokyo</h3>
+        <p>Lots of neon lights.</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <h2>Travel Tips</h2>
+      <ul>
+        <li>Don't forget your passport!!</li>
+        <li>Bring snacks for the plane.</li>
+        <li>Wear comfy shoes.</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h2>Book Your Trip</h2>
+      Where? <input type="text" id="destIn" /><br /><br />
+      When? <input type="text" id="dateIn" />
+      <button onclick="book()">FLY AWAY!</button>
+    </div>
+
+    <script>
+      function book() {
+        var dest = document.getElementById("destIn").value;
+        var date = document.getElementById("dateIn").value;
+        if (dest === "" || date === "") {
+          alert("Hey! You forgot to say where or when!");
+        } else {
+          alert(
+            "Pack your bags! We are sending you to " +
+              dest +
+              " on " +
+              date +
+              "!")
+               alert("Please pay the sum of 99999 Rupees");
+        alert("redirecting to bank page......");
+        window.location.href = "https://devansh25005091-cpu.github.io/Fake-payment-gateway";
+
+          
+        }
+    }
+    </script>
+  </body>
+</html>
+      
